@@ -209,3 +209,19 @@ print("")
 print("Top 18 Put options -->") 
 print(put.iloc[0:17,0].to_string(index = False))
 
+call_str = call.iloc[0:17,0]
+put_str = put.iloc[0:17,0]
+c_str = ""
+p_str = ""
+for elem in call_str:
+    c_str+="\""
+    c_str+= str(elem)
+    c_str+="\""
+    c_str+= " "
+for elem in put_str:
+    p_str+="\""
+    p_str+= str(elem)
+    p_str+="\""
+    p_str+= " "
+print(c_str)
+print(p_str)
